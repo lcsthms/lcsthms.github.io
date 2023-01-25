@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'Avenir';
+    src: local('Avenir Medium'), local('Avenir-Medium'),
+        url('fonts/Avenir-Medium.woff2') format('woff2'),
+        url('fonts/Avenir-Medium.woff') format('woff'),
+        url('fonts/Avenir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family:"utmaptimabold";
+    src:url("https://candyfonts.com/wp-data/2018/10/26/11239/UTM AptimaBold.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11239/UTM AptimaBold.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11239/UTM AptimaBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "badtype";
+    src: url(fonts/BadTyp-Regular.otf);
+}
+
+
+body {
+    font-weight: 500;
+    background-color: #fdf5e2;
+    font-family: 'Avenir', sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+h1 {
+    font-family: "badtype";
+    font-size: 4vw;
+    color: #3493ad;
+}
+
+h2 {
+    font-family: "utmaptimabold";
+    font-size: 2vw;
+}
+
+#menuVideo{
+    position:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:8vh;
+    margin-bottom: 8vh;
+    top:0;
+    justify-content: center;
+    width: 90%;
+}
+
+
+#fleche {
+    margin-top: 10px;
+    cursor: default;
+}
+
+#fleche img {
+    padding:10px;
+    padding-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fleche img:hover {
+    cursor: pointer;
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caseLogo{
+    height: 100px;
+}
+
+nav {
+    background-color: #fdf5e2;
+    z-index: 1000;
+    position: absolute;
+    top: -200px;
+    display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+    transition: top 0.5s;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	text-decoration: none;
+	margin: auto;
+    padding: 0;
+}
+
+nav ul li {
+	margin-left: 10px;
+	padding:2vw;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: max(1.5vw, 15px);
+}
+
+#map { 
+    display: block;
+    float: right;
+    z-index: 0;
+    width: 50vw;
+    height: 90vh;
+}
+
+#histoireWax {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdf5e2;
+    overflow: scroll;
+    float: left;
+    width: 30vw;
+    height: 90vh;
+	align-items: center;
+    z-index: 100;
+}
+
+#histoireWax p{
+    width: 80%;
+}
+
+#histoireWax h1 {
+  text-align: center;
+}
+
+#histoireWax ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.mapboxgl-ctrl-bottom-right {
+    display: none;
+}
+
+
+#infos2, #infos3, #infos1 {
+    display: none;
+}
+
+
+#pays1, #pays2, #pays3 {
+    text-decoration: none;
+}
+
+.choix {
+color: #561217;
+margin: auto   ;
+text-align: justify;
+padding-bottom: 20px;
+font-size: 2vw;
+}
+
+.choix:hover {
+    cursor: pointer;
+    color: #3493ad;
+}
+
+
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 0 auto;
+    perspective: 1000px;
+  }
+  
+  .card {
+    flex-basis: calc(25% - 20px);
+    width: calc(33.3333% - 20px);
+    height: calc(50% - 20px);
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    display: block;
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .card.flip {
+    transform: rotateY(180deg);
+    background-image: url(img/cartedos2.png);
+  }
+  
+  
+.titreSection {
+    text-align: center;
+}
+
+.paragraphe {
+    max-width: 80%;
+    margin-left: 10vw;
+    margin-left: 10vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#illustration{
+    display: block;
+    max-width:90vw;
+    max-height:80vh;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.textIllus {
+    display: block;
+    max-width: 50%;
+    margin-left: 0;
+    transition: all 500ms;
+}
+
+.textIllus:hover {
+    max-width: 60%;
+}
+
+.textIllus:hover .choix{
+    font-size: 2.5vw;
+}
+
+
+i {
+    display: block;
+    font-size: 10px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.oeuvreSecond {
+    max-width: 30vw;
+    height: 40vh;
+}
+
+#listeOeuvre {
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex   ;
+    justify-content: space-between;
+}
+
+#waxAjd{
+    text-align: center;
+}
+
+.legende {
+    text-align: center;
+}
+
+.fleur {
+    width: 50px;
+}
+
+.fleur:hover{
+    cursor: pointer;
+}
+
+#selection{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#bio{
+    max-width: 80%;
+    margin-left: 10vw;
+}
+
+#nomOeuvre {
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex   ;
+    justify-content: space-between;
+}
+
+#signification1{
+    margin: 10px;
+    float: left;
+    width: 20vw;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#signification1 img {
+    height: 141px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px
+}
+
+#signification2{
+    margin: 10px;
+    float: right;
+    width: 20vw;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#signification2 img {
+    height: 141px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 10px
+}
+
+.exp{
+    height: 225px;
+    margin: 10px;
+    display: none;
+    align-items: center;
+}
+
+.exp p{
+    width: 50%;
+    
+}
+
+#oeuvreTitre{
+    color: #DDA300;
+}
+
+#jeuTitre {
+    color: #708739;
+}
+
+#waxAjd #nom{
+    font-size: 3vw;
+}
+
+#sousTitreOeuvre{
+    width: 80%;
+    margin-left: 10vw;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Réécrire l'histoire du Wax</title>
+        <link rel="stylesheet" href="style.css"/>
+        <!--<link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">-->
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <nav id="nav">
+            <ul>
+                <li> <a href= "#menuVideo"> Accueil</a> </li>
+                <li> <a href= "#histoireTitre">Histoire</a> </li>
+            </ul>
+            <a class="caseLogo" href="index.html"> <img id="logo" src="img/logo site wax.png"/> </a>
+            <ul>
+                <li> <a href= "#jeuTitre"> Signification</a> </li>
+                <li> <a href= "#oeuvreTitre"> Aujourd'hui</a> </li>
+            </ul>
+        </nav>
+
+        <div id="menuVideo">
+         
+            <video id ="myVideo" src="img/waxv4.mp4" type="video/mp4" controls autoplay width="100%" > 
+            </video>
+            <!--<button id="button"> Skip </button>-->
+            
+        </div>
+
+    
+        <a id="fleche"
+            href="#histoireTitre"> <img src="img/fleche.svg" width="50px" height="50px"> 
+        </a>
+      
+        <h1 id="histoireTitre" class="titreSection">L'histoire du Wax</h1>
+
+      <div class="container">
+        <div id="histoireWax"> 
+                <h2 id="pays1" class="choix" onclick="showInfos1()" > 17e et 18e siècle : Indonésie </h2>
+                    <p id="infos1"> L’histoire du wax commence en Indonesie, avec l'apparition du “batik” au XIème siècle. Le batik est une technique née sur l’ile de Java qui consiste à dessiner un motif des deux côtés d’un textile avec de la cire d'abeille, avant de le teindre. <br><br>
+
+                      Le mot «batik», en javanais, signifie «pointillés». Les indonésiens utilisent le «canting», instrument qui permet de déposer de petites gouttelettes de cire sur le tissu, afin de former un dessin. Il faut parfois plusieurs mois pour confectionner un seul «sarong», nom que donnent les indonésiens à ces tissus artisanaux. Ces sarongs étaient réservés aux classes élevées de Java, parfois même uniquement à la famille royale. <br><br>
+                      
+                      Ces créations artisanales vont se voir transformées par la colonisation. En 1816, la Hollande, déjà présente dans la région, colonise l'ensemble de l’archipel Indonesien et décide de fabriquer industriellement des sarongs. En 1852 l’entreprise “Perevinaire”, crée une machine baptisée “la Javanaise” inspirée de la machine française “la Perrotine” qui imprime des billets de banque. Leur ambition est de commercialiser ces textiles et de les diffuser dans toute l'Indonésie, mais c’est un échec. <br><br>
+                      
+                      En 1872 les javanais trouvèrent un moyen d’accélérer la production du batik artisanal, avec le «tjap», un tampon de bois recouvert de fils de cuivre, ce qui leur permit de réduire les coûts de fabrication et donc de le rendre plus abordable. La population locale privilégie l’achat de sarong artisanal, plus abordable et de meilleure qualité par rapport aux textiles importés de Hollande. Les Hollandais sont donc contraints de chercher un autre marché pour leurs textiles. <br><br>
+                    </p> 
+                      <img id="illus1" class="textIllus" src="img/indonesie.jpg">
+                      <i> Petite usine de batik à Java en 1915, source : Tropenmuseum, Amsterdam</i>
+                    
+                    
+                <h2 id="pays2" class="choix" onclick="showInfos2()"> 19e siècle : Pays Bas </h2>
+                    <p id="infos2"> 
+                      Après leur défaite cuisante en Indonésie, la Hollande cherche un nouveau marché pour ses tissus. <br>
+
+                      Ebenerser Brown Fleming, un marchand écossais, qui faisait dans les années 1860,  commerce avec l’Indonésie et l’Afrique de l’Ouest eu vent des besoins de textiles en Afrique de l’Ouest et va passer commande auprès de “Perevinaire” pour importer des “batiks” hollandais en Afrique. Rapidement, d’autres entreprises tels que P.F. Van Vlissigen Ankersmit et Roessingh s'implantent sur le marché africain et le batik devient le wax, en référence à la cire d’abeille utilisée pour sa confection. <br><br>
+                      
+                      Les Pays-Bas sont les premiers à avoir produit du Wax, ce sont d’ailleurs aujourd’hui les seuls à maintenir cette activité, à Helmond, avec l’usine Vlisco. Ont également participé à la production européenne du Wax : la Suisse (de 1928 à 1974) par exemple, et l’Angleterre (de 1902 à 2007) dans la région de Manchester plus précisément, avec notamment la société ABC (Arnold Brunnschweiler & Company). Tous participent à l’acheminement du Wax vers l’Afrique. <br><br>
+                      
+                      Vers 1960, des usines commencèrent à s'installer en Afrique. En 1966, les néerlandais implantent une usine au Ghana, appelée Ghana Textiles Printing Company, futur GTP, et Uniwax en Côte d’Ivoire en 1968. Cela permet alors à la population locale de se procurer des tissus plus accessibles financièrement. La production aux Pays-Bas fut donc réduite pour se concentrer sur la confection d’un Wax de luxe. <br><br>
+                    </p> 
+                      <img id="illus2" class="textIllus" src="img/paysbas.jpg">
+                      <i> Première usine Vlisco en 1864, source : Regional Historisc Centre Eindhoven</i>
+
+                    
+
+                <h2 id="pays3" class="choix" onclick="showInfos3()"> 20e siècle : Ghana </h2>
+                    <p id="infos3">
+                      La toute première cargaison de Wax débarque en Afrique en 1893, au Ghana. L'importation du wax vient premièrement d’une raison économique; mais ce commerce va s’accompagner d’une histoire et de nombreux mythes. <br><br>
+
+                      L’entreprise Vilsco introduit le mythe selon lequel le wax aurait fait son apparition en afrique grâce à des guerriers Ashanti de l’armée néerlandaise des Indes orientales recruté pour mater des insurrections dans les indes orientale néerlandaise et qui serait revenus de Borneo et Sumatra avec des batiks qui aurait été populaire au Ghana instantanément. <br><br>
+                      
+                      C’est à la fin du XIXe siècle que le Wax a fait son apparition en Afrique.
+                      Aujourd’hui, il fait partie intégrante de la vie quotidienne et tout le monde
+                      s’accorde à dire qu’il est un des symboles de l’identité africaine. <br><br>
+                    </p>
+                      <img id="illus3" class="textIllus" src="img/ghana.jpg">
+                      
+                        <i> Marché de wax dans le sud du Ghana, source : Cambridge University Press</i>              
+                    
+            </li>
+        </div>
+
+        <div id="map"></div>
+      </div>
+
+
+        <h1 id="jeuTitre" class="titreSection">Le Wax comme Mode d'expression</h1>
+        <p class="paragraphe"> Si les pagnes sont à l’origine des tissus fabriqués aux Pays-Bas et en
+          Angleterre, d’inspiration indonésienne, leur valeur, en Afrique, vient des
+          histoires créées par les Nana Benz du Togo et d’Afrique de l’Ouest.
+          Les Nana Benz ont inventé des slogans inspirés des motifs du Wax qu’elles
+          vendaient. Aujourd’hui encore, elles continuent d’en inventer de nouveaux,
+          que les clientes adoptent rapidement. C’est tout un langage iconographique
+          qui s’est créé, fait de symboles, de couleurs, de slogans… <br><br>
+          
+          Il est un moyen de communication à part entière, qui permet par exemple
+          aux femmes d’exprimer silencieusement ce qu’elles pensent à leurs époux
+          ou à leurs coépouses.
+          Il évoque des thèmes de la vie quotidienne, des objets présents dans
+          la société africaine, il exprime également des vœux de prospérité, de
+          richesse... Le Wax a envahi tous les domaines de la vie : la religion, la
+          politique, le quotidien, les relations familiales, etc.
+          Présents depuis les origines, certains motifs dits «classiques» sont devenus
+          des incontournables, grâce notamment au succès des messages qu’ils
+          véhiculent. <br><br>
+
+          <strong>Découvrez désormais quelques exemples de motifs à travers ce jeu de Mémory et tentez de découvrir leur signification en associant les paires de carte. <br> </strong>
+          </p>
+
+        <div id="signification1"> 
+          <div id="sign1" class="exp">
+            <img src="img/mercedes.png" >
+            <p> Mercedes : Les Nana Benz, vendeuses togolaises qui avaient fait fortune grâce à la vente de Wax hollandais, ont été appelées comme cela en référence à la Mercedes Benz, qu’elles étaient les premières à acheter dans le pays. Le mot « Nana» vient lui, de « Na» qui signifie « mère» au Togo. Ce sont les Nana Benz qui ont commencé à donner des noms au pagne afin d’attirer la clientèle.</p>
+          </div>
+          <div id="sign2" class="exp">
+            <img src="img/abc.png">
+            <p> ABC : La personne qui porte ce tissu affirme qu’elle sait lire, écrire et qu’elle est allée à l’école. Ce motif, créé au début du XXème siècle, a l’ambition de montrer que l’instruction est un moyen d’ascension sociale et d’émancipation, et qui valorise ceux qui le portent.</p>
+          </div>
+          <div id="sign3" class="exp">
+            <img src="img/yedo.png">
+            <p> Yêdo : a toile d’araignée d’Anansi au Ghana. Anansi est un personnage mythique Akan, une petite araignée rusée qui racheta à son père Nyame, le Dieu suprême, tous les contes africains. Cette légende était tellement importante, qu’elle fut emportée par les esclaves vers les Antilles et elle est encore contée de nos jours au Ghana, en Jamaïque, en Guyanne et dans le monde caribéen.</p>
+          </div>
+        </div>
+
+        <div id="signification2"> 
+          <div id="sign4" class="exp">
+            <img src="img/genito.png">
+            <p> Genito : Femme d’un certain âge, célibataire, veuve ou divorcée qui entretient une relation avec un homme qui est souvent bien plus jeune qu’elle.</p>
+          </div>
+          <div id="sign5" class="exp"> 
+            <img src="img/hibiscus.png">
+            <p> Hibiscus: Porté par les amies célibataires de la mariée, il représente la recherche d’un prétendant au mariage.</p>
+          </div>
+          <div id="sign6" class="exp">
+            <img src="img/sac.png">
+            <p> "Sac de Michèle Obama: Ce motif précédemment appelé «sac à main» a été baptisé «le sac de Michelle Obama» après une visite de la première Dame Américaine sur le sol africain au moment de son édition.</p>
+          </div>
+        </div> 
+
+        <div id="game">
+            <div class="card" data-card-value="1">
+              <img src="img/mercedes.png" alt="Card 1">
+            </div>
+            <div class="card" data-card-value="2">
+              <img src="img/abc.png" alt="Card 2">
+            </div>
+            <div class="card" data-card-value="3">
+              <img src="img/yedo.png" alt="Card 3">
+            </div>
+            <div class="card" data-card-value="4">
+              <img src="img/genito.png" alt="Card 4">
+            </div>
+            <div class="card" data-card-value="5">
+              <img src="img/hibiscus.png" alt="Card 5">
+            </div>
+            <div class="card" data-card-value="6">
+              <img src="img/sac.png" alt="Card 6">
+            </div>
+            <!-- Duplicate cards -->
+            <div class="card" data-card-value="1">
+              <img src="img/mercedes.png" alt="Card 1">
+            </div>
+            <div class="card" data-card-value="2">
+              <img src="img/abc.png" alt="Card 2">
+            </div>
+            <div class="card" data-card-value="3">
+              <img src="img/yedo.png" alt="Card 3">
+            </div>
+            <div class="card" data-card-value="4">
+              <img src="img/genito.png" alt="Card 4">
+            </div>
+            <div class="card" data-card-value="5">
+              <img src="img/hibiscus.png" alt="Card 5">
+            </div>
+            <div class="card" data-card-value="6">
+              <img src="img/sac.png" alt="Card 6">
+            </div>
+        </div>
+
+        <h1 id="oeuvreTitre" class="titreSection">Le Wax aujourd'hui</h1>
+
+          <p id="sousTitreOeuvre">Pour terminer, on comprends que l’on doit l’arrivée et surtout la création du tissu Wax en Afrique à la colonisation ! En effet, ce sont les hollandais qui ont découvert des techniques de teinture sur tissu. Ils auraient observé ces techniques en Indonésie et les auraient ramené sur les côtes africaines.
+          À partir du 21e siècle, le Wax séduit la haute couture et s’imprègne dans la culture urbaine. Certains en font aussi un usage politique: porter le Wax à l’effigie de l’épée de la royauté exprimait ainsi pour les Ashanti un geste d’opposition au pouvoir colonial britannique. En s’appropriant ce vêtement d’origine extra-européenne, les designers et artistes contribuent par là-même à la légitimation des cultures urbaines africaines. Car s’il est d’origine asiatique et de commercialisation européenne, le Wax est devenu un symbole de l’Afrique. Un objet hybride qui connaîtra sans doute encore de nombreuses métamorphoses.
+          <br> <br> <strong>Nous vous proposons pour finir de découvrir une sélection de trois artistes contemporains qui basent leur travaux sur l’utilisation afin de faire passer un message qui leur est propre. Découvrez chaque artiste en cliquant sur les fleurs ci-dessous</strong></p>
+
+        <div id="selection">
+          <img class="fleur" id="fleur1" src="img/fleur4.png">
+          <img class="fleur" id="fleur2" src="img/fleur3.png">
+          <img class="fleur" id="fleur3" src="img/fleur3.png" >
+        </div>
+
+        <div id="waxAjd">
+          <h2 id="nom"> Hassan Hajjaj</h2>
+          <img id="illustration" src="img/oeuvre1.jpg">
+          <i id="legende"> "Time Out" Hassan Hajjaj, 2007</i>
+          
+          <p id="bio"> Né à Larache (Maroc) en 1961, Hassan Hajjaj passe son enfance à Londres. Il est créateur, designer et photographe. C'est Artiste autodidacte et adepte du multiculturalisme, il est considéré comme le pionnier du pop art marocain. il est autant influencé par les scènes culturelles et musicales londoniennes, que par son héritage nord africain. Son univers artistique traduit sa capacité à créer des ponts entre ces deux cultures, comme le révèlent ses séries photographiques, entreprises dès 1980. Grandes compositions colorées avec le wax, adoptant les codes de la photographie de mode contemporaine et du pop art, elles font se croiser les styles, les univers et les icônes.
+          </p>
+          <h2> Ses autres oeuvres </h2>
+          <div id="listeOeuvre"> 
+            <img id="oeuvre1" class="oeuvreSecond" src="img/oeuvre1_2.jpg">
+            <img id="oeuvre2"class="oeuvreSecond" src="img/oeuvre1_3.jpg">
+            <img id="oeuvre3"class="oeuvreSecond" src="img/oeuvre1_4.jpg">
+          </div>
+          <div id="nomOeuvre">
+            <i id="legende1"> Kesh Angels, 2010</i>
+            <i id="legende2"> Yima Pouffes, Object for Sale</i>
+            <i id="legende3"> 3 Canal, 2014</i>
+          </div>
+        </div>
+
+    </body>
+
+    <script src="scriptmap.js"> </script>
+    <script src="script.js"></script>
+    <script src="scriptcard.js"></script>
+</html>
