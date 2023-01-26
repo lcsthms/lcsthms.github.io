@@ -185,7 +185,7 @@ fleur2.onclick = function(){
 
   illus.src="img/oeuvre2.jpg";
   oeuvre1.src="img/oeuvre2_3.jpg";
-  oeuvre2.src="img/oeuvre2_4.jpg";
+  oeuvre2.src="img/oeuvre2_2.jpg";
   oeuvre3.src="img/oeuvre2_4.jpg";
   nom.innerHTML="Seydou Keita";
   bio.innerHTML="Seydou Keïta est un photographe portraitiste malien né en 1923 à Bamako et mort le 22 novembre 2001 en France. Considéré comme le « père » de la photographie africaine, Seydou Keïta est un précurseur qui commence son activité de portraitiste dans le Bamako de 1948. le wax, ce tissu décoratif typiquement africain, occupe une place de choix dans les clichés de Keïta. En superposant les imprimés des vêtements aux décors de ses fonds, il a su créer des images hypnotiques d’une rare beauté."
